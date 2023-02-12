@@ -5,8 +5,8 @@ The 'standard' reader code for the dht22 temperature sensor works well on faster
 
 This code is self-contained, so if you want to use the wiring pi libary it will need to be modified. The real-time clock is used to measure the time which elapses (or appears to elapse) between signal transitions, and then applies corrections for all the possible error scenarios, reducing the error (sumcheck failure) rate significantly.
 
-To use this code, merely include it in you project and call 'init_read_temp()'. 
+To use this code, merely include it in your project and call 'init_read_temp()'. 
 Subsquent calls to 'read_temp()' will return the current temperature.
 There are no error conditions to report.
 
-The code is in use in my room thermostat project.
+The code has been in use in my room thermostat, cylinder thermostat, and outside air temperature monitor projects for many years.
